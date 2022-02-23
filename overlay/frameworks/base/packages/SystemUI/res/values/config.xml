@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2020, The Android Open Source Project
+** Copyright 2018, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,12 +16,13 @@
 ** limitations under the License.
 */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Whether to show Smooth Display feature in Settings Options -->
-    <bool name="config_show_smooth_display">true</bool>
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">1060px</dimen>
 
-    <!-- Location of the fingerprint sensor (power button) -->
-    <item name="fingerprint_sensor_location_fraction_x" type="fraction">100%</item>
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">44%</item>
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">@dimen/physical_power_button_center_screen_location_y</dimen>
 </resources>

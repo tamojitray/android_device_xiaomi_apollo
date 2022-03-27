@@ -12,16 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
-DEVICE_MAINTAINER := Dobsgw
+DEVICE_MAINTAINER := Jit
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-PRODUCT_NAME := arrow_apollo
+PRODUCT_NAME := aosp_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
